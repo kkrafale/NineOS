@@ -1,0 +1,10 @@
+[Icons]
+Theme=NineOS
+
+[General]
+ColorScheme=Layan
+Name=Layan
+
+[KDE]
+LookAndFeelPackage=com.github.vinceliuice.Layan
+widgetStyle=kvantum-dark

@@ -1,0 +1,25 @@
+[Icon Theme]
+Name=NineOS
+Comment=Nine OS Icon Theme
+Inherits=breeze,hicolor
+Directories=16x16/apps,22x22/apps,32x32/apps,48x48/apps,128x128/apps
+
+[16x16/apps]
+Size=16
+Type=Fixed
+
+[22x22/apps]
+Size=22
+Type=Fixed
+
+[32x32/apps]
+Size=32
+Type=Fixed
+
+[48x48/apps]
+Size=48
+Type=Fixed
+
+[128x128/apps]
+Size=128
+Type=Fixed

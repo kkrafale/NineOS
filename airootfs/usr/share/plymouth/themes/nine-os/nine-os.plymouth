@@ -1,0 +1,8 @@
+[Plymouth Theme]
+Name=Nine OS
+Description=Nine OS Boot Screen
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/nine-os
+ScriptFile=/usr/share/plymouth/themes/nine-os/nine-os.script

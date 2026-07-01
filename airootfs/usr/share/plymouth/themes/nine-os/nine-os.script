@@ -1,0 +1,42 @@
+Window.SetBackgroundTopColor(0, 0, 0);
+Window.SetBackgroundBottomColor(0, 0, 0);
+
+screen_w = Window.GetWidth();
+screen_h = Window.GetHeight();
+center_x = Math.Int(screen_w / 2);
+center_y = Math.Int(screen_h / 2);
+
+# ── Emblema ──────────────────────────────────────────────────
+raw  = Image("logo.png");
+srcw = raw.GetWidth();
+srch = raw.GetHeight();
+
+tw = 180;
+th = Math.Int(tw * srch / srcw);
+scaled = raw.Scale(tw, th);
+logo_spr = Sprite(scaled);
+logo_spr.SetPosition(center_x - Math.Int(tw / 2), center_y - Math.Int(th / 2) - 30, 1);
+logo_spr.SetOpacity(1.0);
+
+# ── Bolinha piscante ─────────────────────────────────────────
+dot    = Image("dot.png");
+dw     = dot.GetWidth();
+dh     = dot.GetHeight();
+dot_spr = Sprite(dot);
+dot_spr.SetPosition(center_x - Math.Int(dw / 2),
+                    center_y - Math.Int(th / 2) - 30 + th + 88, 2);
+dot_spr.SetOpacity(1.0);
+
+frame = 0;
+
+fun refresh_callback() {
+    frame = frame + 1;
+    if (frame > 50) { frame = 0; }
+    if (frame < 25) {
+        dot_spr.SetOpacity(1.0);
+    } else {
+        dot_spr.SetOpacity(0.08);
+    }
+}
+
+Plymouth.SetRefreshFunction(refresh_callback);
