@@ -1,4 +1,4 @@
-# Nine OS
+# Nine OS 1.0
 
 <p align="center">
   <img src="readmeb.png" alt="Nine OS Banner">
