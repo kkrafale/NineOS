@@ -1,40 +1,43 @@
-// Remove todos os painéis padrão
 panels().forEach(function(p) { p.remove(); });
 
-// ── Barra superior (menu bar do macOS) ───────────────────────
+// PAINEL SUPERIOR
 var top = new Panel("org.kde.panel");
 top.location   = "top";
-top.height     = 30;
+top.height     = 46;
 top.floating   = false;
 top.alignment  = "center";
+top.lengthMode = "fill";
+top.hiding     = "none";
 
-// Menu global de aplicativos (substitui barra de menus do app ativo)
+var launcher = top.addWidget("org.kde.plasma.kickoff");
+launcher.currentConfigGroup = ["General"];
+launcher.writeConfig("useCustomButtonImage", true);
+launcher.writeConfig("customButtonImage", "/usr/share/icons/Tela-circle-dark/128x128/apps/start-here.png");
+launcher.writeConfig("icon", "/usr/share/icons/Tela-circle-dark/128x128/apps/start-here.png");
+
 top.addWidget("org.kde.plasma.appmenu");
-
-// Espaço flexível empurra tudo para os lados
 top.addWidget("org.kde.plasma.panelspacer");
-
-// Bandeja do sistema
 top.addWidget("org.kde.plasma.systemtray");
 
-// Relógio
 var clock = top.addWidget("org.kde.plasma.digitalclock");
 clock.currentConfigGroup = ["Appearance"];
 clock.writeConfig("showDate", true);
 clock.writeConfig("use24hFormat", 2);
 
-// ── Dock inferior flutuante (dock do macOS) ──────────────────
-var dock = new Panel("org.kde.panel");
-dock.location  = "bottom";
-dock.height    = 64;
-dock.alignment = "center";
-dock.floating  = true;
+top.addWidget("org.kde.plasma.showdesktop");
 
-// Tarefas como ícones (igual o dock do mac)
-var tasks = dock.addWidget("org.kde.plasma.icontasks");
+// PAINEL INFERIOR
+var bottom = new Panel("org.kde.panel");
+bottom.location   = "bottom";
+bottom.height     = 80;
+bottom.floating   = true;
+bottom.alignment  = "center";
+bottom.lengthMode = "fit";
+bottom.hiding     = "windowsbelow";
+
+var tasks = bottom.addWidget("org.kde.plasma.icontasks");
 tasks.currentConfigGroup = ["General"];
-tasks.writeConfig("showOnlyCurrentScreen",  false);
-tasks.writeConfig("showOnlyCurrentDesktop", false);
-tasks.writeConfig("highlightWindows",       true);
-tasks.writeConfig("groupingStrategy",       1);
-tasks.writeConfig("middleClickAction",      "NewInstance");
+tasks.writeConfig("fill", false);
+tasks.writeConfig("groupingStrategy", 1);
+tasks.writeConfig("highlightWindows", true);
+tasks.writeConfig("middleClickAction", "NewInstance");

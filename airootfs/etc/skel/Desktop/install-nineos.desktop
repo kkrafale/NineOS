@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Instalar NineOS
+Comment=Instalar NineOS 1.0 Stone River
+Exec=pkexec calamares
+Icon=/usr/share/calamares/branding/nineos/logo.png
+Terminal=false
+Categories=System;

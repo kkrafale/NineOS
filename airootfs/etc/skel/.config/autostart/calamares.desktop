@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=Instalar NineOS
+Exec=bash -c 'sleep 10 && pkexec calamares'
+Icon=/usr/share/calamares/branding/nineos/logo.png
+X-KDE-autostart-phase=2
+OnlyShowIn=KDE;

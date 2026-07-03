@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="40">
+  <rect id="decoration" x="0" y="0" width="200" height="40" rx="8" ry="8" fill="#141414"/>
+  <rect id="decoration-bottom" x="0" y="36" width="200" height="4" fill="#b00000" opacity="0.6"/>
+  <rect id="decoration-inactive" x="0" y="0" width="200" height="40" rx="8" ry="8" fill="#0f0f0f"/>
+  <rect id="decoration-bottom-inactive" x="0" y="36" width="200" height="4" fill="#333333" opacity="0.4"/>
+</svg>

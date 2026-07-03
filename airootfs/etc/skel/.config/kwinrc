@@ -1,0 +1,12 @@
+[org.kde.kdecoration2]
+library=org.kde.kwin.aurorae
+NoPlugin=false
+theme=__aurorae__svg__Layan-dark
+
+[Compositing]
+Backend=OpenGL
+Enabled=true
+GLCore=true
+
+[Windows]
+BorderlessMaximizedWindows=false

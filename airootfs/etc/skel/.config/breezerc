@@ -1,0 +1,6 @@
+[Common]
+OutlineIntensity=OutlineOff
+
+[Windeco]
+ButtonSize=ButtonDefault
+DrawBorderOnMaximizedWindows=false

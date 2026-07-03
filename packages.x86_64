@@ -131,7 +131,6 @@ xl2tpd
 zsh
 plasma-meta
 plasma-desktop
-sddm
 konsole
 dolphin
 kate
@@ -147,4 +146,4 @@ appmenu-gtk-module
 libdbusmenu-glib
 libdbusmenu-gtk3
 qt6-webengine
-sddm
+plasma-login-manager

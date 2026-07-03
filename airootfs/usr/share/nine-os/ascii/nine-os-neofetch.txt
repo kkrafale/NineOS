@@ -1,0 +1,16 @@
+${c1}          YYYYYYYYYY          
+${c1}      YYYYYY      YYYYYY      
+${c1}    YYYY              YYYY    
+${c1}   YYY                  YYY   
+${c1} YYYY                    YYYY 
+${c1} YYY                      YYY
+${c1}YYYY       YYYYYYYY       YYYY
+${c1}YYYY      YYYYYYYYYY      YYYY
+${c1}YYYY      YYYYYYYYYY      YYYY
+${c1}YYYYY     YYYYYYYYYY      YYYY
+${c1} YYYY${c2}Z${c1}    YYYYYYYYYY      YYY 
+${c1} YYYYYY   YYYYYYYYYY      YYY 
+${c1}   YYYYYY${c2}Z${c1}YYYYYYYYYY      Y   
+${c1}    YYYYYYYYYYYYYYYY          
+${c1}      YYYYYYYYYYYYYY          
+${c1}          YYYYYYYYYY          

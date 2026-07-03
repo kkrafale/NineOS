@@ -1,0 +1,28 @@
+---
+componentName: nineos
+
+strings:
+  productName:         NineOS
+  shortProductName:    NineOS
+  version:             1.0
+  shortVersion:        1.0
+  versionedName:       NineOS 1.0
+  shortVersionedName:  NineOS 1.0
+  bootloaderEntryName: NineOS
+  productUrl:          https://nineos.org
+  supportUrl:          https://nineos.org
+  releaseNotesUrl:     https://nineos.org
+
+images:
+  productLogo:    "logo.png"
+  productIcon:    "logo.png"
+  productWelcome: "welcome.png"
+
+slideshow: "show.qml"
+
+style:
+  sidebarBackground:    "#0d0d0d"
+  sidebarText:          "#ffffff"
+  sidebarTextSelect:    "#b00000"
+  sidebarTextHighlight: "#b00000"
+  logoHeight:            80

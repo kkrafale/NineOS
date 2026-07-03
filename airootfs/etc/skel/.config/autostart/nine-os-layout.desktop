@@ -1,6 +1,6 @@
 [Desktop Entry]
 Type=Application
 Name=Nine OS Panel Layout
-Exec=bash -c 'qdbus org.kde.plasmashell /PlasmaShell org.kde.PlasmaShell.evaluateScript "$(cat /usr/share/nine-os/plasma-layout.js)" && rm ~/.config/autostart/nine-os-layout.desktop'
+Exec=bash -c 'sleep 8 && qdbus org.kde.plasmashell /PlasmaShell org.kde.PlasmaShell.evaluateScript "$(cat /usr/share/nine-os/plasma-layout.js)" && sleep 2 && rm -- ~/.config/autostart/nine-os-layout.desktop'
 X-KDE-autostart-phase=2
 OnlyShowIn=KDE;
